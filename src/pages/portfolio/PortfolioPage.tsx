@@ -2,10 +2,10 @@ import React from 'react';
 
 const PortfolioPage: React.FC = () => {
   const div_1 = "flex flex-col items-center w-full space-y-2 px-4 text-center bg-white text-black px-50 py-4";
-  const div_2 = "flex flex-col items-center w-full space-y-2 px-4 text-center bg-black px-50";
+  const div_2 = "flex flex-col items-center w-full space-y-2 px-4 text-center bg-black text-white px-50";
 
   return (
-    <section className='bg-white p-4 text-black md:p-8'>
+    <section className='p-4 md:p-8'>
       <div className="w-full space-y-6">
         <h1>Portfolio</h1>
         <div className={div_1}>
