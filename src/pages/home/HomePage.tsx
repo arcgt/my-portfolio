@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
         </div>
         <p className='text-xl'>Welcome to my <span className='cursor-pointer font-medium text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
         <div className='text-base/8 max-w-[800px]'>
-          <p>I have a solid foundation in programming and electronic / electrical engineering.</p>
+          <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
           <p>I have put together this site as a portfolio of my interests, so feel free to check out my <span className='cursor-pointer underline font-medium text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span> for more information!</p>
         </div>

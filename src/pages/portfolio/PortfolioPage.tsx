@@ -5,7 +5,7 @@ const PortfolioPage: React.FC = () => {
   const div_2 = "flex flex-col items-center text-center bg-gray-200 text-gray-950 px-50 py-4";
 
   return (
-    <section className='mt-36 w-full'>
+    <section className='mt-36 w-full text-base/8'>
       <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
         <div className='flex flex-row '><h1 className='font-light'>PORTFOLIO</h1></div>
         <div className='flex flex-row '><p className='font-light text-xl'>Engineering . Art . Music</p></div>
