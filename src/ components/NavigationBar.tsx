@@ -6,7 +6,7 @@ const NavigationBar: React.FC = () => {
     <>
       <nav className='flex flex-col fixed top-0 left-0 z-[10] h-36 gap-4 w-full items-center justify-center bg-gray-50 shadow-sm'>
         <div className='flex flex-row items-center gap-16'>
-          <Link to="/"><p className='font-light text-gray-950'>TIANHONG GAN</p></Link>
+          <Link to="/"><p className='text-xl font-light text-gray-950'>TIANHONG GAN</p></Link>
         </div>
         <div className="flex flex-row bg-gray-950 w-4/5 h-1/100"> </div>
         <div className='flex flex-row items-center gap-16'>

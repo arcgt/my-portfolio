@@ -8,7 +8,7 @@ const PortfolioPage: React.FC = () => {
     <section className='mt-36 w-full'>
       <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
         <div className='flex flex-row '><h1 className='font-light'>PORTFOLIO</h1></div>
-        <div className='flex flex-row '><p className='font-light'>Programming . Engineering . Art . Music</p></div>
+        <div className='flex flex-row '><p className='font-light text-xl'>Engineering . Art . Music</p></div>
       </div>
       <div className={div_1}>
         <p>FOTOKITE: COMPUTER VISION INTERNSHIP</p>
