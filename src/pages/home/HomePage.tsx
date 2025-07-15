@@ -2,10 +2,9 @@ import React from 'react';
 
 const HomePage: React.FC = () => {
   return (
-    <section className='bg-slate-50 p-4 text-slate-950 md:p-8'>
-      <div className='flex flex-col gap-4'>
-        <h1>about</h1>
-      </div>
+    <section className='mt-36 w-full'>
+      <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-120 bg-no-repeat bg-cover items-center justify-center gap-4'></div>
+      <div className='flex flex-col h-screen'>about</div>
     </section>
   );
 };
