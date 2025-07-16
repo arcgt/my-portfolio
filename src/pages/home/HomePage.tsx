@@ -5,6 +5,10 @@ import DocIcon from '../../assets/home/doc-icon.png';
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    document.documentElement.scrollTo({top: 0, behavior: "instant"});
+  }, []);
+
   return (
     <section className='mt-36 w-full'>
       <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-120 bg-no-repeat bg-cover items-center justify-center gap-4'></div>

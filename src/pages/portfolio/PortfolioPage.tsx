@@ -8,6 +8,10 @@ const PortfolioPage: React.FC = () => {
   const header = "text-4xl";
   const date = "text-lg";
 
+  React.useEffect(() => {
+    document.documentElement.scrollTo({top: 0, behavior: "instant"});
+  }, []);
+
   return (
     <section className='flex flex-col mt-36 w-screen font-light text-base/8 items-center'>
       <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
