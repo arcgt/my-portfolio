@@ -3,7 +3,7 @@ My portfolio website, made using React + TypeScript + Vite.
 Design based on my website made using Wix: https://tianhonggan.wixsite.com/arcgt/my-portfolio
 
 ## TODO List
-- Add assets + formatting to Portfolio page
+- Add assets + link to Portfolio page
 - Clean code, create components for reusable elements
 - Add recent portfolio entries
 - Contact page
