@@ -29,8 +29,8 @@ npm run deploy
 ```
 
 ## TODO List
-- **Mobile responsitivity**
 - Clean code, create components for reusable elements
 - Add recent portfolio entries
 - Add contact page
 - Optional: Add computer graphics html report
+- Optional: full-responsitivity (improve support for ipad + ultrawide)

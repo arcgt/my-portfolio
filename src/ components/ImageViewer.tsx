@@ -13,11 +13,11 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
   const isDisabledRight = imageIdx === images.length - 1;
   const isDisabledLeft = imageIdx === 0;
 
-  const disabledButtonClassName = 'flex text-4xl text-gray-400 items-center justify-center cursor-pointer px-6';
-  const enabledButtonClassName = 'flex text-4xl text-gray-800 items-center justify-center cursor-pointer px-6';
+  const disabledButtonClassName = 'flex text-lg xl:text-4xl text-gray-400 items-center justify-center cursor-pointer xl:px-6';
+  const enabledButtonClassName = 'flex text-lg xl:text-4xl text-gray-800 items-center justify-center cursor-pointer xl:px-6';
 
   return (
-    <div className='flex flex-row w-full justify-between select-none'>
+    <div className='flex flex-row xl:w-full justify-between select-none'>
       <div 
         onClick={() => isDisabledLeft ? null : setImageIdx(imageIdx - 1)}
         className={isDisabledLeft ? disabledButtonClassName : enabledButtonClassName}
@@ -27,7 +27,7 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
       <img
         src={images[imageIdx]}
         alt="image-viewer"
-        className="w-auto h-[300px] rounded-lg"
+        className="w-auto h-[160px] xl:h-[300px] rounded-lg"
       />
       <div 
         onClick={() => isDisabledRight ? null : setImageIdx(imageIdx + 1)}

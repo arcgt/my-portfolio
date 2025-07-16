@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
 
   return (
     <section className='mt-36 w-full'>
-      <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-120 bg-no-repeat bg-cover items-center justify-center gap-4'></div>
+      <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center'></div>
       <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
         <h1>ABOUT ME</h1>
         <div className='flex flex-col gap-4 text-xl'>
@@ -19,8 +19,8 @@ const HomePage: React.FC = () => {
           <p>artist</p>
           <p>musician</p>
         </div>
-        <p className='text-xl'>Welcome to my <span className='cursor-pointer font-bold text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
-        <div className='text-base/8 max-w-[800px]'>
+        <p className='text-xl max-w-[320px]'>Welcome to my <span className='cursor-pointer font-bold text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
+        <div className='text-base/8 max-w-[320px] xl:max-w-[800px]'>
           <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
           <p>I have put together this site as a portfolio of my interests, so feel free to check out my <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span> for more information!</p>
@@ -31,8 +31,8 @@ const HomePage: React.FC = () => {
           <p className='text-4xl'>MY SKILL SET</p>
           <p>(see <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span>  for examples + projects)</p>
         </div>
-        <div className='flex flex-row gap-10 items-center'>
-          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[400px] h-[400px] p-10 items-center justify-start'>
+        <div className='flex flex-col xl:flex-row gap-10 items-center'>
+          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start'>
             <div className='flex flex-row justify-center pb-4'>
               <img
                 className="h-10"
@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
             <div>Machine Learning: Torch, TensorFlow, OpenAI/GPT, NLP</div>
             <div>Computer Vision: OpenCV</div>
           </div>
-          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[400px] h-[400px] p-10 items-center justify-start'>
+          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start'>
             <div className='flex flex-row justify-center pb-4'>
              <img
                 className="h-10"
@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
             <div>I have experience mainly in producing assets for game development using digital art.</div>
             <div>Mediums: digital, pencil, fineliner (+ gouache, graphic markers, watercolour, acrylic, soft pastels, oil pastels)</div>
           </div>
-          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[400px] h-[400px] p-10 items-center justify-start'>
+          <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start'>
             <div className='flex flex-row justify-center pb-4'>
               <img
                 className="h-10"
@@ -70,11 +70,11 @@ const HomePage: React.FC = () => {
             <div>Instruments (piano, guitar, voice, ukulele, violin), production (Garageband, iMovie)</div>
           </div>
         </div>
-        <div>Fun fact: all art, music, media and designs featured on this website (including the <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => window.open("https://github.com/arcgt/my-portfolio", "_blank")}>website itself</span>!) are made by me.</div>
+        <div className='max-w-[320px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => window.open("https://github.com/arcgt/my-portfolio", "_blank")}>website itself</span>!) are made by me.</div>
       </div>
       <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
         <p className='text-4xl'>ACADEMIC BACKGROUND</p>
-        <div className='max-w-[800px] text-base/8'>
+        <div className='max-w-[320px] xl:max-w-[800px] text-base/8'>
           <div className='flex flex-row justify-center pb-4'>
             <img
               className="h-10"
@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
           <p>Master Thesis: Using machine learning to train real-time, audio-driven, emotional talking head models </p>
           <p>Specialist in Computer Vision, Embedded / Control Systems, Machine Learning, Computer Graphics, Physically-based Simulations, Game Design and Microeconomy.</p>
         </div>
-        <div className='max-w-[800px] text-base/8'>
+        <div className='max-w-[320px] xl:max-w-[800px] text-base/8'>
           <div className='flex flex-row justify-center pb-4'>
             <img
               className="h-10"
@@ -109,7 +109,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <div className='bg-fixed h-120 bg-[url(assets/home/footer.jpg)]'></div>
-      <div className='p-8 bg-gray-50 text-gray-950 font-light text-xs'>
+      <div className='p-4 xl:p-8 bg-gray-50 text-gray-950 font-light text-xs'>
         <p>©2025 by Tianhong Gan</p>
       </div>
     </section>

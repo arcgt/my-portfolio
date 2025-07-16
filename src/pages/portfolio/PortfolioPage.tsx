@@ -41,9 +41,9 @@ import FotokiteImage from '../../assets/portfolio/fotokite/logo.png';
 
 const PortfolioPage: React.FC = () => {
   const div_bg_1 = "flex flex-col items-center text-center bg-gray-50 text-gray-950 py-6 w-screen";
-  const div_text_1 = "flex flex-col gap-6 max-w-[800px]";
+  const div_text_1 = "flex flex-col gap-6 max-w-[320px] xl:max-w-[800px]";
   const div_bg_2 = "flex flex-col items-center text-center bg-gray-200 text-gray-950 py-6 w-screen";
-  const div_text_2 = "flex flex-col gap-6 max-w-[800px]";
+  const div_text_2 = "flex flex-col gap-6 max-w-[320px] xl:max-w-[800px]";
   const header = "text-4xl";
   const date = "text-lg";
 
@@ -53,7 +53,7 @@ const PortfolioPage: React.FC = () => {
 
   return (
     <section className='flex flex-col mt-36 w-screen font-light text-base/8 items-center'>
-      <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
+      <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
         <div className='flex flex-row '><h1 className='font-light'>PORTFOLIO</h1></div>
         <div className='flex flex-row '><p className='font-light text-xl'>Engineering . Art . Music</p></div>
       </div>
@@ -63,7 +63,7 @@ const PortfolioPage: React.FC = () => {
           <p className={date}>18th October 2021 - 15th April 2022</p>
           <div className='flex flex-row justify-center'>
             <img
-              className="w-[250px]"
+              className="w-[100px] xl:w-[250px]"
               src={FotokiteImage}
               alt="fotokite-logo.png"
             />
@@ -79,7 +79,7 @@ const PortfolioPage: React.FC = () => {
           <p className={date}>March 2021 - February 2022</p>
           <div className='flex flex-row justify-center'>
             <img
-              className="w-[400px]"
+              className="xl:w-[400px]"
               src={SwissloopTunnelingImage}
               alt="swissloop-tunneling.png"
             />
@@ -130,7 +130,7 @@ const PortfolioPage: React.FC = () => {
           <p className={date}>Autumn Semester, 2020</p>
           <div className='flex flex-row justify-center'>
             <img
-              className="w-[350px]"
+              className="xl:w-[350px]"
               src={AmongUsImage}
               alt="among-us-render.png"
             />
@@ -146,7 +146,7 @@ const PortfolioPage: React.FC = () => {
           <p className={date}>Autumn Semester, 2020</p>
           <div className='flex flex-row justify-center'>
             <img
-              className="w-[600px]"
+              className="xl:w-[600px]"
               src={NoriImage}
               alt="nori-render.png"
             />
@@ -162,7 +162,7 @@ const PortfolioPage: React.FC = () => {
           <p className={date}>18th - 20th September 2020</p>
           <div className='flex flex-row justify-center'>
             <img
-              className="w-[350px]"
+              className="xl:w-[350px]"
               src={HackZurichImage}
               alt="hack-zurich-2020.png"
             />
@@ -247,9 +247,9 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>EMG MUSCLE MOVEMENT DETECTOR</p>
           <p className={date}>29th October - 2nd November 2018</p>
-          <div className='flex flex-row gap-12'>
+          <div className='flex flex-col xl:flex-row gap-12'>
             <img
-              className="h-[350px]"
+              className="xl:h-[350px]"
               src={EMGMuscleMovementDetectorImage}
               alt="emg-muscle-movement-detector.png"
             />
@@ -264,13 +264,13 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>DIGITAL POWER SUPPLY</p>
           <p className={date}>12th October 2018 - 8th March 2019</p>
-          <div className='flex flex-row gap-12'>
+          <div className='flex flex-col xl:flex-row gap-12'>
             <div className='flex flex-col gap-6'>
               <p>Designing and implementing a 5 V and 12 V digital power supply (UCL 2nd year project, leader of a team of 5).</p>
               <p>Rigorous testing and verification of our proposed digital power supply (DPS) was conducted via analysis of theory, Multisim simulations and testing of circuitry, before a PCB design was implemented. Surface mount components were then assembled on the board using solder paste and a reflow oven, and vias manually connected by soldering. The assembled PCB was finally tested to ensure it passed all verification tests. The relevant documents (requirements specification, verification plan, datasheet, manufacturing plan, costing analysis) were composed and updated appropriately throughout the process. A DPS was produced, capable of providing two voltage outputs (5V and 12V) from a single input voltage (9V).</p>
             </div>
             <img
-              className="h-[420px]"
+              className="xl:h-[420px]"
               src={DigitalPowerSupplyImage}
               alt="digital-power-supply.png"
             />
@@ -282,7 +282,7 @@ const PortfolioPage: React.FC = () => {
           <p className={header}>RED BADGER INTERNSHIP</p>
           <p className={date}>July 2017, August 2018</p>
           <img
-            className="w-full px-36"
+            className="w-full xl:px-36"
             src={RedBadgerImage}
             alt="red-badger.png"
           />
@@ -299,9 +299,9 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>ABLEITIES PROJECT</p>
           <p className={date}>Summer, 2017</p>
-          <div className='flex flex-row gap-12'>
+          <div className='flex flex-col xl:flex-row gap-12'>
             <img
-              className="h-[350px]"
+              className="xl:h-[350px]"
               src={AbleitiesImage}
               alt="impromptu-workstation.png"
             />
