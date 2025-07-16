@@ -1,6 +1,6 @@
 # My Portfolio (WIP)
 My portfolio website, made using React + TypeScript + Vite.
-Check it out [here](https://arcgt.github.io/my-portfolio/portfolio)!
+Check it out [here](https://arcgt.github.io/my-portfolio/)!
 
 ## Prerequisites
 1. Node.js (https://nodejs.org/en)
