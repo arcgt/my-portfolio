@@ -26,3 +26,10 @@ Start the React app by running the following command:
 ```
 npm run dev
 ```
+
+## Deploy App
+To deploy the app to GitHub Pages:
+
+```
+npm run deploy -- -m "Deploy React app to GitHub Pages"
+```
