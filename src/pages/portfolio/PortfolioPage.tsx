@@ -1,5 +1,43 @@
 import React from 'react';
 import Button from '../../ components/Button';
+import BCIReport from '../../assets/portfolio/bci/ChannelSelectionForLowPowerBCI.pdf';
+import AbleitiesImage from '../../assets/portfolio/ableities/impromptu-workstation.jpg';
+import RedBadgerImage from '../../assets/portfolio/red-badger/ideas.png';
+import DigitalPowerSupplyImage from '../../assets/portfolio/dps/product.jpg';
+import EMGMuscleMovementDetectorImage from '../../assets/portfolio/emg-muscle-movement/product-with-filter.jpg';
+import PCBWeatherStationImage1 from '../../assets/portfolio/weather-station-pcb/1.jpg';
+import PCBWeatherStationImage2 from '../../assets/portfolio/weather-station-pcb/2.jpg';
+import PCBWeatherStationImage3 from '../../assets/portfolio/weather-station-pcb/3.jpg';
+import PCBWeatherStationImage4 from '../../assets/portfolio/weather-station-pcb/4.jpg';
+import PCBWeatherStationImage5 from '../../assets/portfolio/weather-station-pcb/5.jpg';
+import PCBWeatherStationImage6 from '../../assets/portfolio/weather-station-pcb/6.jpg';
+import PCBWeatherStationImage7 from '../../assets/portfolio/weather-station-pcb/7.jpg';
+import ImageViewer from '../../ components/ImageViewer';
+import LudumDareImage1 from '../../assets/portfolio/ludum-dare/1.png';
+import LudumDareImage2 from '../../assets/portfolio/ludum-dare/2.png';
+import LudumDareImage3 from '../../assets/portfolio/ludum-dare/3.png';
+import LudumDareImage4 from '../../assets/portfolio/ludum-dare/4.png';
+import LudumDareImage5 from '../../assets/portfolio/ludum-dare/5.png';
+import LudumDareImage6 from '../../assets/portfolio/ludum-dare/6.png';
+import BCIImage from '../../assets/portfolio/bci/bci.png';
+import HackZurichImage from '../../assets/portfolio/hackzurich/ice-cream.jpg';
+import NoriImage from '../../assets/portfolio/computer-graphics/render.png';
+import AmongUsImage from '../../assets/portfolio/among-us/models.png';
+import SomniumImage1 from '../../assets/portfolio/somnium/1-poster.png';
+import SomniumImage2 from '../../assets/portfolio/somnium/2-gameover.png';
+import SomniumImage3 from '../../assets/portfolio/somnium/3-sprite-1.png';
+import SomniumImage4 from '../../assets/portfolio/somnium/4-sprite-2.png';
+import SomniumImage5 from '../../assets/portfolio/somnium/5-sprite-3.png';
+import SomniumImage6 from '../../assets/portfolio/somnium/6-enemy-1.png';
+import SomniumImage7 from '../../assets/portfolio/somnium/7-enemy-2.png';
+import SomniumImage8 from '../../assets/portfolio/somnium/8-controls.png';
+import SomniumImage9 from '../../assets/portfolio/somnium/9-end-screen.png';
+import SomniumImage10 from '../../assets/portfolio/somnium/in-game-1.png';
+import SomniumImage11 from '../../assets/portfolio/somnium/in-game-2.png';
+import SomniumImage12 from '../../assets/portfolio/somnium/in-game-4.png';
+import SomniumImage13 from '../../assets/portfolio/somnium/in-game-5.png';
+import SwissloopTunnelingImage from '../../assets/portfolio/slt/team-filter.png';
+import FotokiteImage from '../../assets/portfolio/fotokite/logo.png';
 
 const PortfolioPage: React.FC = () => {
   const div_bg_1 = "flex flex-col items-center text-center bg-gray-50 text-gray-950 py-6 w-screen";
@@ -23,6 +61,13 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>FOTOKITE: COMPUTER VISION INTERNSHIP</p>
           <p className={date}>18th October 2021 - 15th April 2022</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[250px]"
+              src={FotokiteImage}
+              alt="fotokite-logo.png"
+            />
+          </div>
           <p>For the industrial internship aspect of my ETH master's degree, I had the opportunity to spend 6-months with the Computer Vision sub team of Fotokite, a Swiss start-up who design and manufacture tethered drones for firefighters and public safety teams. The drone features a RGB camera and a thermal camera, which prove useful in emergency situations such as fires.</p>
           <p>Throughout this experience, I was given a series of tasks based on the thermal camera of the tethered drone, which will be used as a foundation for the next iteration of the kite. I had the opportunity to learn a lot from my work and my supervisor, and worked on topics such as real time image processing + optimisation, geometric calibration, and wrapping the finalised application as a custom GStreamer source plugin with cross-compilation capabilities.</p>
           <p>For this project, I used a variety of languages and frameworks, including C/C++, Python, OpenCV, Docker and Hexagon SDK.</p>
@@ -32,8 +77,15 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>SWISSLOOP TUNNELING: THE NOT-A-BORING COMPETITION</p>
           <p className={date}>March 2021 - February 2022</p>
-          <p>(Head of Electrical and Software Engineering, Lead Embedded, Control & Software Engineer - Design + Innovation Award, 2nd Place)</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[400px]"
+              src={SwissloopTunnelingImage}
+              alt="swissloop-tunneling.png"
+            />
+          </div>
           <p>Photo Credit: Janick Entremont</p>
+          <p>(Head of Electrical and Software Engineering, Lead Embedded, Control & Software Engineer - Design + Innovation Award, 2nd Place)</p>
           <p>The Swissloop Tunnelling team and the project we represent has no doubt been a dominant part of my life throughout the latter half of 2021. As a cross-functional team of roughly 50 students (and with the support of several industrial partners), we have discovered new skills, formed lasting bonds, and built a 7m long, 2.5 tonne Tunnel Boring Machine (TBM). As a proud member of Swissloop Tunneling, I would like to provide a brief insight into our extraordinary journey.</p>
           <p>The student team was founded originally in 2020 to compete in the first ever Not-A-Boring Competition in 2021, brought to life by Elon Musk. The main goal of the competition was to design and build a TBM that was capable of digging a 30-meter-long tunnel, 0.5 meters in diameter, and up to 1.5 meters deep as fast and as accurately as possible. </p>
           <p>I joined the team initially as a control systems engineer for our innovative, award-winning tunnel lining system. For the months leading up to the Not-A-Boring Competition, I progressively took on significantly more responsibility as a Lead Embedded, Control & Software Engineer, where I debugged our custom-made PCB designs (including participating in large amounts of SMD soldering), implemented much of the embedded and control interfaces (with the Raspberry Pi 4 and Raspberry Pi Pico, using Python and MicroPython respectively) for all subsystems of the machine (specifically soil removal, tunnel lining and propulsion), and designed, refactored and implemented much of the software backend + communication. As part of the testing process, I also debugged and interacted with much of the high voltage and power systems responsible for powering our machine.</p>
@@ -47,6 +99,23 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>ETH GAME PROGRAMMING LABORATORY 2021</p>
           <p className={date}>Spring Semester, 2021</p>
+          <ImageViewer 
+            images={[
+              SomniumImage1,
+              SomniumImage2,
+              SomniumImage3,
+              SomniumImage4,
+              SomniumImage5,
+              SomniumImage6,
+              SomniumImage7,
+              SomniumImage8,
+              SomniumImage9,
+              SomniumImage10,
+              SomniumImage11,
+              SomniumImage12,
+              SomniumImage13,
+            ]}
+          />
           <p>After a semester of excitement and hard work, I, alongside my four other team members have finally completed our game, "Somnium"! The game was created as part of the ETH Game Programming Laboratory 2021, and focused on the given theme of "A Grimm's Fairytale".</p>
           <p>The game, based on the Grimm's tale of "A Little Red Riding Hood", is an open-map 2.5D co-op game revolving around working together to combine colours, in order to colour in your nightmares and gain enough courage to overcome your fears.</p>
           <p>I was in charge of creating all assets, animations and soundtracks, and had an amazing experience! Watch the game trailer and try out our game!</p>
@@ -59,6 +128,13 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>RIGID BODY COLLISION OF AMONG US AVATARS</p>
           <p className={date}>Autumn Semester, 2020</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[350px]"
+              src={AmongUsImage}
+              alt="among-us-render.png"
+            />
+          </div>
           <p>(ETH Zurich, Physically-Based Simulation in Computer Graphics Course Project, Team of 2)</p>
           <p>In this mini course project, we used Blender and C++ to create our own 3D Among Us avatars and environment, and implemented 3D rigid body collision between the avatars and the environment.</p>
           <p>In the first week, we used Blender to model our own Among Us avatars. We added a bone structure and using this, a running animation. In the second week, we figured out how to triangulate the whole mesh, export the mesh to an .off file, and imported it into the PBS framework. In the third week, we implemented real-time motion simulation by applying a force to the avatar in real time. In the final weeks, we implemented 3D rigid body collision for complex, non-convex shapes, using a volume bounding hierarchy and AABB bounding box primitives. For this to work, we needed to solve a number of issues in order to make the collision detection more fast and robust. We also made our own Among Us environment in the later weeks using Blender. All in all, a small fun project which taught me a lot.</p>
@@ -68,6 +144,13 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>NORI 2: BUILDING A MINIMALISTIC RAY TRACER IN C++</p>
           <p className={date}>Autumn Semester, 2020</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[600px]"
+              src={NoriImage}
+              alt="nori-render.png"
+            />
+          </div>
           <p>(ETH Zurich, Computer Graphics Individual Project)</p>
           <p>The Nori base code provides many features that would be tedious to implement from scratch. In this project, I extend this system to a full-fledged physically-based renderer in a series of course exercises. The exercises requires implementation of features such as Sampling and Warping, Monte Carlo Ray Tracing (Light Sampling, BRDF Sampling, Multiple Importance Sampling), and Global Illumination (Dielectric BSDF, Path Tracing, Photon Mapping). Using the functions implemented in the course exercises, along with further self implemented functionality, I was able to render the image shown below (using a scene I created in Blender), following the given final project theme of "Perfect Timing".</p>
           <p>There is so much happening around us everyday, all seemingly completely random, affected by so many random variables. But, sometimes, almost as if we were in a film, there are things that seem to happen with the perfect timing. My composition wishes to convey a chance encounter, seemingly an act of fate, that leads to the start of a new relation. This is represented by two felines that happen to cross each others' paths admist a busy world, capturing the moment where their tails intertwine to form the shape of a heart in a moment of stillness. Whether it be timing, angle, or focus, this chance encounter requires an absolutely... Purrfect timing.</p>
@@ -77,6 +160,13 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>HACKZURICH 2020 (WORKSHOP #5 FIRST PLACE WINNER!)</p>
           <p className={date}>18th - 20th September 2020</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[350px]"
+              src={HackZurichImage}
+              alt="hack-zurich-2020.png"
+            />
+          </div>
           <p>I was thrilled to be part of HackZurich 2020, Europe's biggest hackathon, and this year, the first ever hybrid hackathon, bringing together over a thousand of the world's brightest tech talents! Participants were selected from thousands of applications all over the world. I was lucky enough to attend the hackathon in person, and met my team of four at the event. Together, we worked on workshop #5: Huawei's "Unleash Innovation With HMS Core" brief, and were the first place winner of this workshop!</p>
           <p>Our product was an app that made use of the Skeletal Detection and Automatic Speech Detection features in the HMS Core's ML Kit.</p>
           <p>Our app enables you to learn a new language while doing exercise, in a fun and gamified AR environment. You are presented with a word in a foreign language, which you must translate. If you do not know the translation of the word, you can also perform a specific comedic yoga position in order to pass the round and earn a point.</p>
@@ -100,8 +190,12 @@ const PortfolioPage: React.FC = () => {
           <p>Using EEGNet filter weights, the 4-class global model with the optimum configuration (with Nch = 16, ds = 3 and T = 3 s) that satisfies the SRAM requirements of the Cortex-M4 processor obtains a validation accuracy of 63.45%, surpassing the state-of-the-art [1] by 0.94%. Moreover, Subject-Specific Transfer Learning (SS-TL) increases the validation accuracy by 5.28% on average. On this optimal model, SS-TL increases the validation accuracy by 4.44% to 67.89%.</p>
           <p>To satisfy the Flash memory requirements of Subject-Specific (SS) models, layer freezing is also investigated, which can drastically increase the number of SS models stored on a device with limited memory.</p>
           <div className='flex flex-row justify-center pb-6'>
-            <Button text="Read my final report" url="https://864635c9-798a-4749-93e9-d055af7cc667.filesusr.com/ugd/95e17a_237751470e924648a6a2459361de9fcf.pdf" />
+            <Button text="Read my final report" url={BCIReport} />
           </div>
+          <img
+            src={BCIImage}
+            alt="brain-computer-interfaces.png"
+          />
           <p className='text-xl'>Channel Selection for Low-Power Brain-Computer Interfaces (Spinoff)</p>
           <p>Additionally to the main project, I engaged in a mini-project that spins off the main project. This focuses on implementing machine learning models for motor-movement (rather than motor imagery) on a low-power microcontroller (ARM Cortex-M4 STM32L475VG) using STM32CubeIDE.</p>
         </div>
@@ -110,6 +204,16 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>LUDUM DARE 72H GAME HACKATHON "UN-FUR-MILIAR TERRITORY"</p>
           <p className={date}>18th - 21st April 2020</p>
+          <ImageViewer 
+            images={[
+              LudumDareImage1,
+              LudumDareImage2,
+              LudumDareImage3,
+              LudumDareImage4,
+              LudumDareImage5,
+              LudumDareImage6,
+            ]}
+          />
           <p>2D game design for the 46th Ludum Dare 72 hour Hackathon (with my friend, Hung Bui Quang).</p>
           <p>For this game, we decided to create a simple game to focus on learning and implementation. In the space of 72 hours, we engaged in programming, illustration, and soundtrack arrangement for our 2D shooter game, "Unfurmiliar Territory". This featured a Cat vs Zogs (a.k.a. Zombie Dogs) design under the hackathon theme of "Keep it Alive". The game and concept were fully created from scratch within the 72 hours using the game engine Godot.</p>
           <p>This event was the first game hackathon I've participated in. I enjoyed the experience a lot and am immensely proud of the final outcome.</p>
@@ -123,6 +227,17 @@ const PortfolioPage: React.FC = () => {
           <p className={header}>MINIATURE WEATHER STATION</p>
           <p className={date}>Autumn Semester, 2019</p>
           <p>(ETH Zurich, Applied Circuit and PCB Design, Course Project, team of two)</p>
+          <ImageViewer 
+            images={[
+              PCBWeatherStationImage1,
+              PCBWeatherStationImage2,
+              PCBWeatherStationImage3,
+              PCBWeatherStationImage4,
+              PCBWeatherStationImage5,
+              PCBWeatherStationImage6,
+              PCBWeatherStationImage7
+            ]}
+          />
           <p>This course involved the development, analysis and implementation of a miniature weather station.</p>
           <p>The main software used was Altium Designer, utilising skills such as choosing and buying electronic parts, using component libraries, preparing schematic symbols + footprints, creating schematic diagrams, and simulation of product.</p>
           <p>Additionally, upon having the model successfully pass the simulation phase, PCB assembly skills (including component placement, soldering and circuit testing) were also applied.</p>
@@ -132,22 +247,45 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_2}>
           <p className={header}>EMG MUSCLE MOVEMENT DETECTOR</p>
           <p className={date}>29th October - 2nd November 2018</p>
-          <p>Building an EMG sensor, which detects muscle movement (UCL 2nd year project, leader of a team of four).</p>
-          <p>We designed electrodes by soldering wires to 2p coins, which allowed EMG signals to be detected and processed using a series of personally designed and soldered amplifiers, filters and buffers. The processed signal was then fed into an Arduino Mega (programmed using C), which transferred the input signal into a series of outputs, including an LED bar, a meter (designed by adjusting the angle of a motor shaft), and sound (higher frequency note depicts more movement).</p>
+          <div className='flex flex-row gap-12'>
+            <img
+              className="h-[350px]"
+              src={EMGMuscleMovementDetectorImage}
+              alt="emg-muscle-movement-detector.png"
+            />
+            <div className='flex flex-col gap-6'>
+              <p>Building an EMG sensor, which detects muscle movement (UCL 2nd year project, leader of a team of four).</p>
+              <p>We designed electrodes by soldering wires to 2p coins, which allowed EMG signals to be detected and processed using a series of personally designed and soldered amplifiers, filters and buffers. The processed signal was then fed into an Arduino Mega (programmed using C), which transferred the input signal into a series of outputs, including an LED bar, a meter (designed by adjusting the angle of a motor shaft), and sound (higher frequency note depicts more movement).</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className={div_bg_1}>
         <div className={div_text_1}>
           <p className={header}>DIGITAL POWER SUPPLY</p>
           <p className={date}>12th October 2018 - 8th March 2019</p>
-          <p>Designing and implementing a 5 V and 12 V digital power supply (UCL 2nd year project, leader of a team of 5).</p>
-          <p>Rigorous testing and verification of our proposed digital power supply (DPS) was conducted via analysis of theory, Multisim simulations and testing of circuitry, before a PCB design was implemented. Surface mount components were then assembled on the board using solder paste and a reflow oven, and vias manually connected by soldering. The assembled PCB was finally tested to ensure it passed all verification tests. The relevant documents (requirements specification, verification plan, datasheet, manufacturing plan, costing analysis) were composed and updated appropriately throughout the process. A DPS was produced, capable of providing two voltage outputs (5V and 12V) from a single input voltage (9V).</p>
+          <div className='flex flex-row gap-12'>
+            <div className='flex flex-col gap-6'>
+              <p>Designing and implementing a 5 V and 12 V digital power supply (UCL 2nd year project, leader of a team of 5).</p>
+              <p>Rigorous testing and verification of our proposed digital power supply (DPS) was conducted via analysis of theory, Multisim simulations and testing of circuitry, before a PCB design was implemented. Surface mount components were then assembled on the board using solder paste and a reflow oven, and vias manually connected by soldering. The assembled PCB was finally tested to ensure it passed all verification tests. The relevant documents (requirements specification, verification plan, datasheet, manufacturing plan, costing analysis) were composed and updated appropriately throughout the process. A DPS was produced, capable of providing two voltage outputs (5V and 12V) from a single input voltage (9V).</p>
+            </div>
+            <img
+              className="h-[420px]"
+              src={DigitalPowerSupplyImage}
+              alt="digital-power-supply.png"
+            />
+          </div>
         </div>
       </div>
       <div className={div_bg_2}>
         <div className={div_text_2}>
           <p className={header}>RED BADGER INTERNSHIP</p>
           <p className={date}>July 2017, August 2018</p>
+          <img
+            className="w-full px-36"
+            src={RedBadgerImage}
+            alt="red-badger.png"
+          />
           <p>In the summer of 2017, I was introduced to an amazing design and software organisation, Red Badger, where I engaged in a week-long internship. I worked with each team within the company (including the design team and the development team) and gained an overall understanding of the agile methodology.</p>
           <p>In the summer of 2018, I was offered the opportunity to return and complete a two-week internship specifically with the development team, where I worked on an internal project. This involved programming a Slack bot using JavaScript and CoffeeScript for the company server.</p>
           <p>To read more, check out my blog posts ('a week at Red Badger' and 'Return of the badger intern') from the Red Badger website!</p>
@@ -161,8 +299,17 @@ const PortfolioPage: React.FC = () => {
         <div className={div_text_1}>
           <p className={header}>ABLEITIES PROJECT</p>
           <p className={date}>Summer, 2017</p>
-          <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, <span onClick={() => {window.open("https://pinpointinc.org/", "_blank")}} className='cursor-pointer underline font-bold text-gray-400'>PinPoint Inc</span>, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
-          <p>The video was filmed using a smartphone and a creative, makeshift set-up, and encourages others to also step forward and share their story.</p>
+          <div className='flex flex-row gap-12'>
+            <img
+              className="h-[350px]"
+              src={AbleitiesImage}
+              alt="impromptu-workstation.png"
+            />
+            <div className='flex flex-col gap-6'>
+              <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, <span onClick={() => {window.open("https://pinpointinc.org/", "_blank")}} className='cursor-pointer underline font-bold text-gray-400'>PinPoint Inc</span>, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
+              <p>The video was filmed using a smartphone and a creative, makeshift set-up, and encourages others to also step forward and share their story.</p>
+            </div>
+          </div>
           <div className='flex flex-row justify-center'>
             <Button text="Watch the story" url="https://www.youtube.com/watch?v=LwNajCE84Ko" />
           </div>
