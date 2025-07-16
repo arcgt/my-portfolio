@@ -70,6 +70,7 @@ const HomePage: React.FC = () => {
             <div>Instruments (piano, guitar, voice, ukulele, violin), production (Garageband, iMovie)</div>
           </div>
         </div>
+        <div>Fun fact: all art, music, media and designs featured on this website (including the <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => window.open("https://github.com/arcgt/my-portfolio", "_blank")}>website itself</span>!) are made by me.</div>
       </div>
       <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
         <p className='text-4xl'>ACADEMIC BACKGROUND</p>

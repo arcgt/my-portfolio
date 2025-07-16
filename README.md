@@ -25,10 +25,11 @@ npm run dev
 To deploy the app to GitHub Pages:
 
 ```
-npm run deploy -- -m "Deploy React app to GitHub Pages"
+npm run deploy
 ```
 
 ## TODO List
+- **Mobile responsitivity**
 - Clean code, create components for reusable elements
 - Add recent portfolio entries
 - Add contact page
