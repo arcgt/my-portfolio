@@ -1,12 +1,6 @@
 # My Portfolio (WIP)
 My portfolio website, made using React + TypeScript + Vite.
-Design based on my website made using Wix: https://tianhonggan.wixsite.com/arcgt/my-portfolio
-
-## TODO List
-- Add assets + link to Portfolio page
-- Clean code, create components for reusable elements
-- Add recent portfolio entries
-- Contact page
+Check it out [here](https://arcgt.github.io/my-portfolio/portfolio)!
 
 ## Prerequisites
 1. Node.js (https://nodejs.org/en)
@@ -33,3 +27,9 @@ To deploy the app to GitHub Pages:
 ```
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
+
+## TODO List
+- Add assets + button links to Portfolio page
+- Clean code, create components for reusable elements
+- Add recent portfolio entries
+- Add contact page
