@@ -19,17 +19,17 @@ const HomePage: React.FC = () => {
           <p>artist</p>
           <p>musician</p>
         </div>
-        <p className='text-xl'>Welcome to my <span className='cursor-pointer font-medium text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
+        <p className='text-xl'>Welcome to my <span className='cursor-pointer font-bold text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
         <div className='text-base/8 max-w-[800px]'>
           <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
-          <p>I have put together this site as a portfolio of my interests, so feel free to check out my <span className='cursor-pointer underline font-medium text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span> for more information!</p>
+          <p>I have put together this site as a portfolio of my interests, so feel free to check out my <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span> for more information!</p>
         </div>
       </div>
       <div className='flex flex-col font-light bg-gray-200 text-gray-950 gap-10 py-10 items-center justify-center'>
         <div className='flex flex-col gap-2'>
           <p className='text-4xl'>MY SKILL SET</p>
-          <p>(see <span className='cursor-pointer underline font-medium text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span>  for examples + projects)</p>
+          <p>(see <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span>  for examples + projects)</p>
         </div>
         <div className='flex flex-row gap-10 items-center'>
           <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[400px] h-[400px] p-10 items-center justify-start'>
@@ -101,9 +101,9 @@ const HomePage: React.FC = () => {
           <p className='text-lg/8 pb-4'>2017 - 2020</p>
           <p className='text-xl/8'>UNIVERSITY COLLEGE LONDON / ETH ZURICH (THIRD YEAR ABROAD)</p>
           <p className='text-xl/8 pb-4'>ELECTRONIC AND ELECTRICAL ENGINEERING (BENG)</p>
-          <p>Grade: First Class Honours (85% Average) (7th out of 120 in cohort)</p>
-          <p className='pb-4'>Major: Electronic and Electrical Engineering,  Minor: Intelligent Systems</p>
-          <p>Bachelor Thesis: Low-Power Brain-Computer Interfaces with a focus on compact Machine Learning models for Edge Computing based on the EEGNet.</p>
+          <p>Grade: First Class Honours (85% Average) - 7th out of 120 in cohort</p>
+          <p className='pb-4'>Major: EEE - Minor: Intelligent Systems</p>
+          <p>Bachelor Thesis: Low-Power Brain-Computer Interfaces using compact Machine Learning models for Edge Computing.</p>
           <p>Specialist in Machine Learning, Digital Systems, Embedded Systems, Systems Programming and Computer Architecture.</p>
         </div>
       </div>

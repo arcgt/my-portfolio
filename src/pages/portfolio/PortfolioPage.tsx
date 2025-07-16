@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../ components/Button';
 
 const PortfolioPage: React.FC = () => {
   const div_bg_1 = "flex flex-col items-center text-center bg-gray-50 text-gray-950 py-6 w-screen";
@@ -49,7 +50,9 @@ const PortfolioPage: React.FC = () => {
           <p>After a semester of excitement and hard work, I, alongside my four other team members have finally completed our game, "Somnium"! The game was created as part of the ETH Game Programming Laboratory 2021, and focused on the given theme of "A Grimm's Fairytale".</p>
           <p>The game, based on the Grimm's tale of "A Little Red Riding Hood", is an open-map 2.5D co-op game revolving around working together to combine colours, in order to colour in your nightmares and gain enough courage to overcome your fears.</p>
           <p>I was in charge of creating all assets, animations and soundtracks, and had an amazing experience! Watch the game trailer and try out our game!</p>
-          https://somnium-colour.itch.io/somnium
+          <div className='flex flex-row justify-center'>
+            <Button text="Play our game!" url="https://somnium-colour.itch.io/somnium" />
+          </div>
         </div>
       </div>
       <div className={div_bg_2}>
@@ -80,8 +83,10 @@ const PortfolioPage: React.FC = () => {
           <p>At the end of each round, the vocabulary is displayed to you in your language as well as the language you are trying to learn. The vocabulary becomes more difficult the longer you survive. The aim of the game is to survive for as long as you can, kind of like flappy bird!</p>
           <p>Our entire idea, implementation and video were created during the hackathon weekend.</p>
           <p>Find the official HackZurich 2020 aftermovie here, and our app description video here!</p>
-          https://www.youtube.com/watch?v=hMcTfU-8Sco
-          https://www.youtube.com/watch?v=-c76wr1xuBU&feature=youtu.be
+          <div className='flex flex-row justify-center gap-2'>
+            <Button text="Official HackZurich aftermovie" url="https://www.youtube.com/watch?v=hMcTfU-8Sco" />
+            <Button text="Our app" url="https://www.youtube.com/watch?v=-c76wr1xuBU&feature=youtu.be" isPrimary={false} />
+          </div>
         </div>
       </div>
       <div className={div_bg_1}>
@@ -94,9 +99,10 @@ const PortfolioPage: React.FC = () => {
           <p>This project investigates channel selection for low power Motor-Imagery Brain-Computer Interfaces (MI-BCIs). It develops a systematic method of channel selection by targeting areas with high Motor-Imagery (MI) neural activity in the brain. To determine channels with the most significant neural activity, an investigation is conducted using Common Spatial Pattern (CSP) filter weights and EEGNet filter weights.</p>
           <p>Using EEGNet filter weights, the 4-class global model with the optimum configuration (with Nch = 16, ds = 3 and T = 3 s) that satisfies the SRAM requirements of the Cortex-M4 processor obtains a validation accuracy of 63.45%, surpassing the state-of-the-art [1] by 0.94%. Moreover, Subject-Specific Transfer Learning (SS-TL) increases the validation accuracy by 5.28% on average. On this optimal model, SS-TL increases the validation accuracy by 4.44% to 67.89%.</p>
           <p>To satisfy the Flash memory requirements of Subject-Specific (SS) models, layer freezing is also investigated, which can drastically increase the number of SS models stored on a device with limited memory.</p>
-          https://864635c9-798a-4749-93e9-d055af7cc667.filesusr.com/ugd/95e17a_237751470e924648a6a2459361de9fcf.pdf
-
-          <p>Channel Selection for Low-Power Brain-Computer Interfaces (Spinoff)</p>
+          <div className='flex flex-row justify-center pb-6'>
+            <Button text="Read my final report" url="https://864635c9-798a-4749-93e9-d055af7cc667.filesusr.com/ugd/95e17a_237751470e924648a6a2459361de9fcf.pdf" />
+          </div>
+          <p className='text-xl'>Channel Selection for Low-Power Brain-Computer Interfaces (Spinoff)</p>
           <p>Additionally to the main project, I engaged in a mini-project that spins off the main project. This focuses on implementing machine learning models for motor-movement (rather than motor imagery) on a low-power microcontroller (ARM Cortex-M4 STM32L475VG) using STM32CubeIDE.</p>
         </div>
       </div>
@@ -107,7 +113,9 @@ const PortfolioPage: React.FC = () => {
           <p>2D game design for the 46th Ludum Dare 72 hour Hackathon (with my friend, Hung Bui Quang).</p>
           <p>For this game, we decided to create a simple game to focus on learning and implementation. In the space of 72 hours, we engaged in programming, illustration, and soundtrack arrangement for our 2D shooter game, "Unfurmiliar Territory". This featured a Cat vs Zogs (a.k.a. Zombie Dogs) design under the hackathon theme of "Keep it Alive". The game and concept were fully created from scratch within the 72 hours using the game engine Godot.</p>
           <p>This event was the first game hackathon I've participated in. I enjoyed the experience a lot and am immensely proud of the final outcome.</p>
-          https://ldjam.com/events/ludum-dare/46/unfurmiliar-territory
+          <div className='flex flex-row justify-center'>
+            <Button text="View our game" url="https://ldjam.com/events/ludum-dare/46/unfurmiliar-territory" />
+          </div>
         </div>
       </div>
       <div className={div_bg_1}>
@@ -143,18 +151,21 @@ const PortfolioPage: React.FC = () => {
           <p>In the summer of 2017, I was introduced to an amazing design and software organisation, Red Badger, where I engaged in a week-long internship. I worked with each team within the company (including the design team and the development team) and gained an overall understanding of the agile methodology.</p>
           <p>In the summer of 2018, I was offered the opportunity to return and complete a two-week internship specifically with the development team, where I worked on an internal project. This involved programming a Slack bot using JavaScript and CoffeeScript for the company server.</p>
           <p>To read more, check out my blog posts ('a week at Red Badger' and 'Return of the badger intern') from the Red Badger website!</p>
-          https://blog.red-badger.com/2017/8/3/a-week-at-red-badger
-          https://blog.red-badger.com/2018/9/6/return-of-the-badger-intern
+          <div className='flex flex-row justify-center gap-2'>
+            <Button text="A week at Red Badger" url="https://blog.red-badger.com/2017/8/3/a-week-at-red-badger" />
+            <Button text="Return of the Badger intern" url="https://blog.red-badger.com/2018/9/6/return-of-the-badger-intern" isPrimary={false} />
+          </div>
         </div>
       </div>
       <div className={div_bg_1}>
         <div className={div_text_1}>
           <p className={header}>ABLEITIES PROJECT</p>
           <p className={date}>Summer, 2017</p>
-          <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, PinPoint Inc, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
+          <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, <span onClick={() => {window.open("https://pinpointinc.org/", "_blank")}} className='cursor-pointer underline font-bold text-gray-400'>PinPoint Inc</span>, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
           <p>The video was filmed using a smartphone and a creative, makeshift set-up, and encourages others to also step forward and share their story.</p>
-          https://pinpointinc.org/
-          https://www.youtube.com/watch?v=LwNajCE84Ko
+          <div className='flex flex-row justify-center'>
+            <Button text="Watch the story" url="https://www.youtube.com/watch?v=LwNajCE84Ko" />
+          </div>
         </div>
       </div>
     </section>
