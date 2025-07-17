@@ -38,6 +38,9 @@ import SomniumImage12 from '../../assets/portfolio/somnium/in-game-4.png';
 import SomniumImage13 from '../../assets/portfolio/somnium/in-game-5.png';
 import SwissloopTunnelingImage from '../../assets/portfolio/slt/team-filter.png';
 import FotokiteImage from '../../assets/portfolio/fotokite/logo.png';
+import MasterThesisImage from '../../assets/portfolio/master-thesis/simplified-pipeline.png';
+import MasterThesisReport from '../../assets/portfolio/master-thesis/thesis-paper.pdf';
+import SpeechfulImage from '../../assets/portfolio/speechful/speechful-logo.png';
 
 const PortfolioPage: React.FC = () => {
   const div_bg_1 = "flex flex-col items-center text-center bg-gray-50 text-gray-950 py-6 w-screen";
@@ -56,6 +59,51 @@ const PortfolioPage: React.FC = () => {
       <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
         <div className='flex flex-row '><h1 className='font-light'>PORTFOLIO</h1></div>
         <div className='flex flex-row '><p className='font-light text-xl'>Engineering . Art . Music</p></div>
+      </div>
+      <div className={div_bg_1}>
+        <div className={div_text_1}>
+          <p className={header}>EDVENT AI: SPEECHFUL</p>
+          <p className={date}>March 2023 - PRESENT</p>
+          <p>Full-stack / Machine Learning Engineer</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="w-[70px]"
+              src={SpeechfulImage}
+              alt="fotokite-logo.png"
+            />
+          </div>
+          <p>Ever wanted to practice learning a language, but didn't know where to start?</p>
+          <p>For the past few years, I have been working with <span className='cursor-pointer font-bold text-gray-400 underline' onClick={() => window.open("https://www.linkedin.com/company/edvent-ai/", "_blank")}>Edvent AI</span> as part of the small founding team to develop a web app that makes use of all the latest technologies to help users learn English in the most natural way - by having conversations!</p>
+          <p>From creating initial designs on Figma back in 2023, to providing over 6000 users real-time, personalised feedback to tailored English lessons - if you know anyone learning English, or taking the IELTS exam, feel free to take a look.</p>
+          <div className='flex flex-row justify-center'>
+            <Button text="Check out Speechful" url="https://app.speechful.ai/" />
+          </div>
+          <p>Technologies used: Figma, React, Python, FastAPI, Azure, MongoDB, GPT</p>
+        </div>
+      </div>
+      <div className={div_bg_2}>
+        <div className={div_text_2}>
+          <p className={header}>REAL-TIME AUDIO-DRIVEN EMOTIONAL TALKING HEADS</p>
+          <p className={date}>August 2022 - March 2023</p>
+          <div className='flex flex-row justify-center'>
+            <img
+              className="xl:w-[600px]"
+              src={MasterThesisImage}
+              alt="simplified-pipeline.png"
+            />
+          </div>
+          <p>ETH Zurich (+ <span className='cursor-pointer font-bold text-gray-400 underline' onClick={() => window.open("https://www.linkedin.com/company/edvent-ai/", "_blank")}>Edvent AI</span>), Master Thesis</p>
+          <p>Generating, in real-time, a 3D talking head model capable of displaying emotion, using just an audio sentence and a single photo.</p>
+          <p>Here's the synopsis:</p>
+          <p>The synthesis of audio-driven talking-head animations have a large variety of applications, including animated films, gaming and digital humans. State-of-the-art works have made significant improvements in crucial features of the talking-head model (including input simplicity, real-time capability, and emotional portrayal), however none have achieved a model that displays superiority in all features. Additionally, select features also show room for further progress.</p>
+          <p>This thesis drives audio-driven talking head synthesis towards real-time, emotional models with simple input modality. First, features from state-of-the-art architectures are combined to obtain initially a pipeline that synthesises high-fidelity, audio-driven 3D talking heads from a single in-the-wild 2D image, which has previously only been achievable through non-trivial methods of generating or crafting a compatible 3D mesh template for the corresponding 3D pipeline.</p>
+          <p>Additionally, this thesis optimises the talking-head synthesis pipeline (based on VOCA) towards real-time capabilities, with a 5x improvement in rendering time and a 1.6x improvement in audio processing time over the VOCA model, obtaining a possible frame-rate of 14 FPS (from previously 3 FPS) on a Nvidia RTX 2080.</p>
+          <p>Finally, this thesis contributes a small 3D emotion-based talking-head dataset, 3D MEAD, generated from a subset of the recently released (2D) MEAD dataset, and proposes a verified working method for obtaining a potentially much larger 3D emotion-based talking-head dataset given sufficient computing power and time. This provides a milestone for the capability to further improve 3D talking heads.</p>
+          <div className='flex flex-row justify-center gap-6'>
+            <Button text="Read the full paper" url={MasterThesisReport} />
+            <Button text="Try the code" url="https://github.com/arcgt/MT" isPrimary={false}/>
+          </div>
+        </div>
       </div>
       <div className={div_bg_1}>
         <div className={div_text_1}>

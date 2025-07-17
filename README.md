@@ -1,4 +1,4 @@
-# My Portfolio (WIP)
+# My Portfolio
 My portfolio website, made using React + TypeScript + Vite.
 Check it out [here](https://arcgt.github.io/my-portfolio/)!
 
@@ -30,7 +30,7 @@ npm run deploy
 
 ## TODO List
 - Clean code, create components for reusable elements
-- Add recent portfolio entries
 - Add contact page
+- Create video player to display music + trailers
 - Optional: Add computer graphics html report
 - Optional: full-responsitivity (improve support for ipad + ultrawide)
