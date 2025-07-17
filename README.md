@@ -30,7 +30,6 @@ npm run deploy
 
 ## TODO List
 - Clean code, create components for reusable elements
-- Add contact page
 - Create video player to display music + trailers
 - Optional: Add computer graphics html report
 - Optional: full-responsitivity (improve support for ipad + ultrawide)
