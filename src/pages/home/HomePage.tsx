@@ -1,11 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import SkillSetCard from './components/SkillSetCard';
 import EducationSection from './components/EducationSection';
+import TextLink from '../../ components/TextLink';
 
 const HomePage: React.FC = () => {
-  const navigate = useNavigate();
-
   React.useEffect(() => {
     document.documentElement.scrollTo({top: 0, behavior: "instant"});
   }, []);
@@ -20,17 +18,17 @@ const HomePage: React.FC = () => {
           <p>artist</p>
           <p>musician</p>
         </div>
-        <p className='text-xl max-w-[320px]'>Welcome to my <span className='cursor-pointer font-bold text-gray-400' onClick={() => navigate('/portfolio')}>online portfolio</span>!</p>
+        <p className='text-xl max-w-[320px]'>Welcome to my {<TextLink text={'online portfolio'} link={'/portfolio'} isExternal={false} isUnderline={false}/>}!</p>
         <div className='text-base/8 max-w-[320px] xl:max-w-[800px]'>
           <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
-          <p>I have put together this site as a portfolio of my interests, so feel free to check out my <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span> for more information!</p>
+          <p>I have put together this site as a portfolio of my interests, so feel free to check out my {<TextLink text={'portfolio'} link={'/portfolio'} isExternal={false} />} for more information!</p>
         </div>
       </div>
       <div className='flex flex-col font-light bg-gray-200 text-gray-950 gap-10 py-10 items-center justify-center'>
         <div className='flex flex-col gap-2'>
           <p className='text-4xl'>MY SKILL SET</p>
-          <p>(see <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => navigate('/portfolio')}>portfolio</span>  for examples + projects)</p>
+          <p>(see {<TextLink text={'portfolio'} link={'/portfolio'} isExternal={false} />} for examples + projects)</p>
         </div>
         <div className='flex flex-col xl:flex-row gap-10 items-center'>
           <SkillSetCard 
@@ -56,7 +54,7 @@ const HomePage: React.FC = () => {
             ]}
           />
         </div>
-        <div className='max-w-[320px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the <span className='cursor-pointer underline font-bold text-gray-400' onClick={() => window.open("https://github.com/arcgt/my-portfolio", "_blank")}>website itself</span>!) are made by me.</div>
+        <div className='max-w-[320px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the {<TextLink text={'website itself'} link={'https://github.com/arcgt/my-portfolio'} />}!) are made by me.</div>
       </div>
       <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
         <p className='text-4xl'>ACADEMIC BACKGROUND</p>

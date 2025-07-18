@@ -41,6 +41,7 @@ import FotokiteImage from '../../assets/portfolio/fotokite/logo.png';
 import MasterThesisImage from '../../assets/portfolio/master-thesis/simplified-pipeline.png';
 import MasterThesisReport from '../../assets/portfolio/master-thesis/thesis-paper.pdf';
 import SpeechfulImage from '../../assets/portfolio/speechful/speechful-logo.png';
+import TextLink from '../../ components/TextLink';
 
 const PortfolioPage: React.FC = () => {
   const div_bg_1 = "flex flex-col items-center text-center bg-gray-50 text-gray-950 py-6 w-screen";
@@ -73,7 +74,7 @@ const PortfolioPage: React.FC = () => {
             />
           </div>
           <p>Ever wanted to practice learning a language, but didn't know where to start?</p>
-          <p>For the past few years, I have been working with <span className='cursor-pointer font-bold text-gray-400 underline' onClick={() => window.open("https://www.linkedin.com/company/edvent-ai/", "_blank")}>Edvent AI</span> as part of the small founding team to develop a web app that makes use of all the latest technologies to help users learn English in the most natural way - by having conversations!</p>
+          <p>For the past few years, I have been working with {<TextLink text={'Edvent AI'} link={'https://www.linkedin.com/company/edvent-ai/'} />} as part of the small founding team to develop a web app that makes use of all the latest technologies to help users learn English in the most natural way - by having conversations!</p>
           <p>From creating initial designs on Figma back in 2023, to providing over 6000 users real-time, personalised feedback to tailored English lessons - if you know anyone learning English, or taking the IELTS exam, feel free to take a look.</p>
           <div className='flex flex-row justify-center'>
             <Button text="Check out Speechful" url="https://app.speechful.ai/" />
@@ -92,7 +93,7 @@ const PortfolioPage: React.FC = () => {
               alt="simplified-pipeline.png"
             />
           </div>
-          <p>ETH Zurich (+ <span className='cursor-pointer font-bold text-gray-400 underline' onClick={() => window.open("https://www.linkedin.com/company/edvent-ai/", "_blank")}>Edvent AI</span>), Master Thesis</p>
+          <p>ETH Zurich (+ {<TextLink text={'Edvent AI'} link={'https://www.linkedin.com/company/edvent-ai/'} />}), Master Thesis</p>
           <p>Generating, in real-time, a 3D talking head model capable of displaying emotion, using just an audio sentence and a single photo.</p>
           <p>Here's the synopsis:</p>
           <p>The synthesis of audio-driven talking-head animations have a large variety of applications, including animated films, gaming and digital humans. State-of-the-art works have made significant improvements in crucial features of the talking-head model (including input simplicity, real-time capability, and emotional portrayal), however none have achieved a model that displays superiority in all features. Additionally, select features also show room for further progress.</p>
@@ -354,7 +355,7 @@ const PortfolioPage: React.FC = () => {
               alt="impromptu-workstation.png"
             />
             <div className='flex flex-col gap-6'>
-              <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, <span onClick={() => {window.open("https://pinpointinc.org/", "_blank")}} className='cursor-pointer underline font-bold text-gray-400'>PinPoint Inc</span>, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
+              <p>In summer 2017,  I worked with a not-for-profit multidisciplinary organisation, {<TextLink text={'PinPoint Inc'} link={'https://pinpointinc.org/'} />}, to create a video that spreads awareness of how disabled people are treated in society. The video takes the form of a draw-my-life, telling the story of a young, ambitious teen, facing a disability he was born with.</p>
               <p>The video was filmed using a smartphone and a creative, makeshift set-up, and encourages others to also step forward and share their story.</p>
             </div>
           </div>
