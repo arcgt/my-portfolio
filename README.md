@@ -34,3 +34,5 @@ npm run deploy
 - Refine global CSS and tailwind config
 - Optional: full-responsitivity (improve support for ipad + ultrawide)
 - Optional: Add computer graphics html report
+- Optional: set up and use prettier
+- Optional: replace doc icon
