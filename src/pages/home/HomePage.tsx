@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
             <div className='text-xl pb-5'>SOFTWARE ENGINEERING</div>
             <div>Full stack: FE (React / TypeScript / Vite / Tailwind, Flutter / Dart), BE (Python), DB (MongoDB, SQL), DevOps (GitHub Actions, Azure, Docker), misc (Firebase, Stripe, Mixpanel, Sentry, GPT)</div>
             <div>Machine Learning: Torch, TensorFlow, OpenAI/GPT, NLP</div>
-            <div>Computer Vision: OpenCV</div>
+            <div>Computer Vision: OpenCV, FastCV, C, C++</div>
           </div>
           <div className='flex flex-col rounded-sm gap-2 bg-gray-50 w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start'>
             <div className='flex flex-row justify-center pb-4'>
