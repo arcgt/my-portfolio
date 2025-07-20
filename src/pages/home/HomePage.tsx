@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
           <p>musician</p>
         </div>
         <p className='text-xl max-w-[320px]'>Welcome to my {<TextLink text={'online portfolio'} link={'/portfolio'} isExternal={false} isUnderline={false}/>}!</p>
-        <div className='text-base max-w-[320px] xl:max-w-[800px]'>
+        <div className='text-base max-w-[320px] md:max-w-[600px] xl:max-w-[800px]'>
           <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
           <p>I have put together this site as a portfolio of my interests, so feel free to check out my {<TextLink text={'portfolio'} link={'/portfolio'} isExternal={false} />} for more information!</p>
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
             ]}
           />
         </div>
-        <div className='max-w-[320px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the {<TextLink text={'website itself'} link={'https://github.com/arcgt/my-portfolio'} />}!) are made by me.</div>
+        <div className='max-w-[320px] md:max-w-[600px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the {<TextLink text={'website itself'} link={'https://github.com/arcgt/my-portfolio'} />}!) are made by me.</div>
       </div>
       <div className='flex flex-col font-light bg-white text-black gap-10 py-10 items-center'>
         <p className='text-4xl'>ACADEMIC BACKGROUND</p>

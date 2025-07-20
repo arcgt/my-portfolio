@@ -27,7 +27,7 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
       <img
         src={images[imageIdx]}
         alt="image-viewer"
-        className="w-auto h-[160px] xl:h-[300px] rounded-lg"
+        className="w-auto h-[160px] md:h-[300px] rounded-lg"
       />
       <div 
         onClick={() => isDisabledRight ? null : setImageIdx(imageIdx + 1)}

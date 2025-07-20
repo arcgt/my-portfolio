@@ -16,7 +16,7 @@ const EducationSection:React.FC<EducationSectionProps> = ({
   bodyText,
 }) => {
   return (
-    <div className='flex flex-col max-w-[320px] xl:max-w-[800px] text-base gap-4 items-center'>
+    <div className='flex flex-col max-w-[320px] md:max-w-[600px] xl:max-w-[800px] text-base gap-4 items-center'>
       <img
         className="w-10"
         src={DocIcon}

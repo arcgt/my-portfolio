@@ -29,7 +29,6 @@ npm run deploy
 ```
 
 ## TODO List
-- Full-responsitivity (improve support for ipad + ultrawide)
 - Optional: Add computer graphics html report
 - Optional: set up and use prettier
 - Optional: replace doc icon
