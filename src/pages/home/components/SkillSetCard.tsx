@@ -10,7 +10,7 @@ const SkillSetCard: React.FC<SkillSetCardProps> = ({
     description
 }) => {
     return (
-        <div className='flex flex-col rounded-sm bg-gray-50 w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start gap-4'>
+        <div className='flex flex-col rounded-sm bg-white w-[320px] h-auto xl:w-[400px] xl:h-[400px] p-10 items-center justify-start gap-4'>
         <img
             className="w-10"
             src={DocIcon}

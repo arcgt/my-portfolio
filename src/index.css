@@ -7,8 +7,8 @@
   text-align: center;
 
   color-scheme: light dark;
-  color: var(--color-gray-50);
-  background-color: var(--color-gray-950);
+  color: var(--color-white);
+  background-color: var(--color-black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,10 +35,16 @@ body {
 
 h1 {
   font-size: 4em;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 300;
 }
 
 p {
+  line-height: 2;
   font-weight: 300;
+}
+
+@theme {
+  --color-white: var(--color-gray-50);
+  --color-black: var(--color-gray-950);
 }

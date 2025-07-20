@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <section className='mt-36 w-full'>
       <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center'></div>
-      <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
+      <div className='flex flex-col font-light bg-white text-black gap-10 py-10 items-center'>
         <h1>ABOUT ME</h1>
         <div className='flex flex-col gap-4 text-xl'>
           <p>I am an engineer</p>
@@ -19,13 +19,13 @@ const HomePage: React.FC = () => {
           <p>musician</p>
         </div>
         <p className='text-xl max-w-[320px]'>Welcome to my {<TextLink text={'online portfolio'} link={'/portfolio'} isExternal={false} isUnderline={false}/>}!</p>
-        <div className='text-base/8 max-w-[320px] xl:max-w-[800px]'>
+        <div className='text-base max-w-[320px] xl:max-w-[800px]'>
           <p>I specialise in full-stack development and ML, and have aided the success of many start-up organisations.</p>
           <p>I also enjoy a variety of things, from art, music and gaming to reading, hiking and photography.</p>
           <p>I have put together this site as a portfolio of my interests, so feel free to check out my {<TextLink text={'portfolio'} link={'/portfolio'} isExternal={false} />} for more information!</p>
         </div>
       </div>
-      <div className='flex flex-col font-light bg-gray-200 text-gray-950 gap-10 py-10 items-center justify-center'>
+      <div className='flex flex-col font-light bg-gray-200 text-black gap-10 py-10 items-center justify-center'>
         <div className='flex flex-col gap-2'>
           <p className='text-4xl'>MY SKILL SET</p>
           <p>(see {<TextLink text={'portfolio'} link={'/portfolio'} isExternal={false} />} for examples + projects)</p>
@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className='max-w-[320px] xl:max-w-[800px]'>Fun fact: all art, music, media and designs featured on this website (including the {<TextLink text={'website itself'} link={'https://github.com/arcgt/my-portfolio'} />}!) are made by me.</div>
       </div>
-      <div className='flex flex-col font-light bg-gray-50 text-gray-950 gap-10 py-10 items-center'>
+      <div className='flex flex-col font-light bg-white text-black gap-10 py-10 items-center'>
         <p className='text-4xl'>ACADEMIC BACKGROUND</p>
         <EducationSection
           date='2020 - 2023'
@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
         />
       </div>
       <div className='bg-fixed h-120 bg-[url(assets/home/footer.jpg)]'></div>
-      <div className='p-4 xl:p-8 bg-gray-50 text-gray-950 font-light text-xs'>
+      <div className='p-4 xl:p-8 bg-white text-black font-light text-xs'>
         <p>©2025 by Tianhong Gan</p>
       </div>
     </section>
