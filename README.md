@@ -31,5 +31,4 @@ npm run deploy
 ## TODO List
 - Optional: Add computer graphics html report
 - Optional: set up and use prettier
-- Optional: replace doc icon
 - Optional: Create video player to display music + trailers

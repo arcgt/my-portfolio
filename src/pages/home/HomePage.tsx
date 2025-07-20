@@ -2,6 +2,9 @@ import React from 'react';
 import SkillSetCard from './components/SkillSetCard';
 import EducationSection from './components/EducationSection';
 import TextLink from '../../ components/TextLink';
+import { FaCode } from "react-icons/fa6";
+import { PiPaintBrushBroad } from "react-icons/pi";
+import { LuMusic } from "react-icons/lu";
 
 const HomePage: React.FC = () => {
   React.useEffect(() => {
@@ -32,6 +35,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className='flex flex-col xl:flex-row gap-10 items-center'>
           <SkillSetCard 
+            Icon={FaCode}
             title="SOFTWARE ENGINEERING"
             description={[
               "Full stack: FE (React / TypeScript / Vite / Tailwind, Flutter / Dart), BE (Python), DB (MongoDB, SQL), DevOps (GitHub Actions, Azure, Docker), misc (Firebase, Stripe, Mixpanel, Sentry, GPT)", 
@@ -39,7 +43,8 @@ const HomePage: React.FC = () => {
               "Computer Vision: OpenCV, FastCV, C, C++"
             ]}
           />
-          <SkillSetCard 
+          <SkillSetCard
+            Icon={PiPaintBrushBroad}
             title="ART"
             description={[
               "I have experience mainly in producing assets for game development using digital art.", 
@@ -47,6 +52,7 @@ const HomePage: React.FC = () => {
             ]}
           />
           <SkillSetCard 
+            Icon={LuMusic}
             title="MUSIC + MEDIA"
             description={[
               "I have experience mainly in composing original songs, and instrumental background music for games.", 
