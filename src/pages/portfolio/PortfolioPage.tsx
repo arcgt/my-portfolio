@@ -69,7 +69,7 @@ const PortfolioPage: React.FC = () => {
           </div>
           <p>Ever wanted to practice learning a language, but didn't know where to start?</p>
           <p>For the past few years, I have been working with {<TextLink text={'Edvent AI'} link={'https://www.linkedin.com/company/edvent-ai/'} />} as part of the small founding team to develop a web app that makes use of all the latest technologies to help users learn English in the most natural way - by having conversations!</p>
-          <p>From creating initial designs on Figma back in 2023, to providing over 6000 users real-time, personalised feedback to tailored English lessons - if you know anyone learning English, or taking the IELTS exam, feel free to take a look.</p>
+          <p>From creating initial designs on Figma back in 2023, to providing over 7000 users real-time, personalised feedback to tailored English lessons - if you know anyone learning English, or taking the IELTS exam, feel free to take a look.</p>
           <div className='flex flex-row justify-center'>
             <Button text="Check out Speechful" url="https://app.speechful.ai/" />
           </div>

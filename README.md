@@ -29,9 +29,8 @@ npm run deploy
 ```
 
 ## TODO List
-- Create video player to display music + trailers
-- Refine global CSS and tailwind config
 - Full-responsitivity (improve support for ipad + ultrawide)
 - Optional: Add computer graphics html report
 - Optional: set up and use prettier
 - Optional: replace doc icon
+- Optional: Create video player to display music + trailers
