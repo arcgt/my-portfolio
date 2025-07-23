@@ -51,9 +51,9 @@ const PortfolioPage: React.FC = () => {
 
   return (
     <section className='flex flex-col mt-36 w-screen font-light text-base items-center'>
-      <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center gap-4'>
-        <div className='flex flex-row '><h1 className='font-light'>PORTFOLIO</h1></div>
-        <div className='flex flex-row '><p className='font-light text-xl'>Engineering . Art . Music</p></div>
+      <div className='flex flex-col bg-[url(assets/portfolio/header-v2.jpg)] w-full h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center gap-4 bg-center'>
+        <div className='flex flex-row'><h1>PORTFOLIO</h1></div>
+        <div className='flex flex-row'><p className='text-2xl'>Engineering . Art . Music</p></div>
       </div>
       <Section 
         title={'EDVENT AI: SPEECHFUL'} 

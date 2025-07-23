@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
 
   return (
     <section className='mt-36 w-full'>
-      <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-60 xl:h-120 bg-no-repeat bg-cover items-center justify-center'></div>
+      <div className='flex bg-[url(assets/home/header.jpg)] w-screen h-60 xl:h-120 bg-no-repeat bg-cover bg-center'></div>
       <div className='flex flex-col font-light bg-white text-black gap-10 py-10 items-center'>
         <h1>ABOUT ME</h1>
         <div className='flex flex-col gap-4 text-xl'>
@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
           ]}
         />
       </div>
-      <div className='bg-fixed h-120 bg-[url(assets/home/footer.jpg)]'></div>
+      <div className='flex bg-fixed h-120 bg-[url(assets/home/footer.jpg)] w-screen bg-no-repeat bg-cover xl:bg-center'></div>
       <div className='p-4 xl:p-8 bg-white text-black font-light text-xs'>
         <p>©2025 by Tianhong Gan</p>
       </div>
