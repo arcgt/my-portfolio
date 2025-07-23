@@ -327,8 +327,8 @@ const PortfolioPage: React.FC = () => {
         <p>In the summer of 2018, I was offered the opportunity to return and complete a two-week internship specifically with the development team, where I worked on an internal project. This involved programming a Slack bot using JavaScript and CoffeeScript for the company server.</p>
         <p>To read more, check out my blog posts ('a week at Red Badger' and 'Return of the badger intern') from the Red Badger website!</p>
         <div className='flex flex-row justify-center gap-2'>
-          <Button text="A week at Red Badger" url="https://blog.red-badger.com/2017/8/3/a-week-at-red-badger" />
-          <Button text="Return of the Badger intern" url="https://blog.red-badger.com/2018/9/6/return-of-the-badger-intern" isPrimary={false} />
+          <Button text="A week at Red Badger" url="/portfolio/rb-blog-2017" isExternal={false} />
+          <Button text="Return of the Badger intern" url="/portfolio/rb-blog-2018" isPrimary={false} isExternal={false} />
         </div>
       </Section>
       <Section 
